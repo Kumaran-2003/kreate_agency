@@ -76,6 +76,12 @@ body {
     @apply dark:text-gray-200;
 }
 
+
+::selection {
+  background-color: #facc15; /* Tailwind's yellow-400 */
+  color: black; /* optional - text color when selected */
+}
+
 /* 
 #2c3e50 -dark
 #f0ebe1 -light
