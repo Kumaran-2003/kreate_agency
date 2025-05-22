@@ -19,15 +19,32 @@ body {
 }
 
 .dark .text-gray-600 {
-  @apply text-gray-400;
+  @apply text-gray-300;
 }
 
 .dark .bg-white {
-  @apply bg-gray-800;
+  @apply bg-white;
 }
+
 
 .dark .text-gray-800 {
   @apply text-gray-200;
+}
+
+.dark .nexthero span.font-semibold {
+  @apply text-yellow-500;
+}
+
+.dark .pricingcard  {
+  @apply text-gray-800;
+}
+
+.dark .pricingcard ul li {
+  @apply text-gray-700;
+}
+
+.dark .buttonsecondary {
+  @apply text-black;
 }
 
 .custom-cursor {

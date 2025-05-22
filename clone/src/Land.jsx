@@ -54,9 +54,19 @@ function Land() {
             <p className="text-lg text-gray-600 font-normal leading-7 -tracking-tight">Turn your idea into the market-ready MVP in less than a month. With all you need to launch and run it.</p>
         </div>
 
+
+
         <div className="buttonset flex gap-4 py-4">
-            <button className="button font-medium px-4 py-2 bg-gray-600 text-white rounded-lg cursor-pointer">See pricing</button>
-            <button className="buttonsecondary font-medium flex gap-2 px-4 py-2 bg-white text-gray-800 rounded-lg cursor-pointer" ><Calendar />Book a call</button>
+            <button
+            className="button font-medium px-4 py-2 bg-gray-600 text-white rounded-lg cursor-pointer"
+            onClick={() => {
+                document.getElementById('pricingcard')?.scrollIntoView({ behavior: 'smooth' });
+            }}>   
+            See pricing
+            </button>
+
+            <button className="buttonsecondary font-medium flex gap-2 px-4 py-2 bg-white text-gray-800 rounded-lg cursor-pointer"><Calendar />Book a call
+            </button>
         </div>
     </div>
 
@@ -64,17 +74,18 @@ function Land() {
 
     <div className="nexthero text-left py-24 flex flex-col gap-8">
         <h2 className='text-3xl font-semibold font-mono tracking-tight '>Get that idea out of your head. <br />Let us take it on</h2> 
-            <div className='text-lg text-gray-600 flex flex-col gap-3 leading-7 -tracking-tight'>
-            <p><span className='font-semibold text-lg text-black'>All included.</span> Web application as your core product, landing page to drive sales, and SEO-ready blog to start getting organic traffic.</p>
-            <p><span className='font-semibold text-lg text-black'>Complete infrastructure.</span> Get seamless integration with payment gateways, user authentication systems, and email marketing platforms.</p>
-            <p><span className='font-semibold text-lg text-black'>It actually works.</span> We code using latest technologies to ensure blazing-fast performance, stability, and scalability.</p>
-            <p><span className='font-semibold text-lg text-black'>Less is more.</span> We guide you to define the core features of your MVP and keep it simple. Stop planning and start testing your idea with real users.</p>
-            </div>
+
+        <div className='text-lg text-gray-600 flex flex-col gap-3 leading-7 -tracking-tight'>
+        <p><span className='font-semibold text-lg text-black'>All included.</span> Web application as your core product, landing page to drive sales, and SEO-ready blog to start getting organic traffic.</p>
+        <p><span className='font-semibold text-lg text-black'>Complete infrastructure.</span> Get seamless integration with payment gateways, user authentication systems, and email marketing platforms.</p>
+        <p><span className='font-semibold text-lg text-black'>It actually works.</span> We code using latest technologies to ensure blazing-fast performance, stability, and scalability.</p>
+        <p><span className='font-semibold text-lg text-black'>Less is more.</span> We guide you to define the core features of your MVP and keep it simple. Stop planning and start testing your idea with real users.</p>
+    </div>
     </div>
 
 
 
-    <div className='pricingcard bg-yellow-300 rounded-2xl p-8 pb-2'>
+    <div id="pricingcard" className='pricingcard bg-yellow-300 rounded-2xl p-8 pb-2'>
         <h2 className='text-3xl text-left font-semibold font-mono'>Fixed price with no hidden costs</h2>
         <h2 className='text-2xl text-left font-semibold py-6'>$3,999/MVP</h2>
 
@@ -91,7 +102,7 @@ function Land() {
 
         <div className="buttonset flex flex-col gap-4 py-4 sm:flex-row">
             <button className="bg-gray-600 font-medium px-4 py-2 rounded-lg text-white w-full justify-center min-w-[160px] cursor-pointer">Get started</button>
-            <button className="bg-white font-medium text-gray-800 px-4 py-2 rounded-lg flex gap-4 w-full justify-center min-w-[160px] cursor-pointer" ><Calendar />Book a call</button>
+            <button className="buttonsecondary bg-white font-medium text-gray-800 px-4 py-2 rounded-lg flex gap-4 w-full justify-center min-w-[160px] cursor-pointer"><Calendar />Book a call</button>
         </div>
 
     </div>
