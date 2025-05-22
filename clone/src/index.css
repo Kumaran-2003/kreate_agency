@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Base styles */
+body {
+  @apply bg-[#f0ebe1] text-gray-900 transition-colors duration-200;
+}
+
+/* Dark mode styles */
+.dark body {
+  @apply bg-[#2c3e50] text-gray-100;
+}
+
+.dark .pricingcard {
+  @apply bg-yellow-400;
+}
+
+.dark .herotextset h2 span {
+  @apply text-gray-300;
+}
+
+.dark .text-gray-600 {
+  @apply text-gray-400;
+}
+
+.dark .bg-white {
+  @apply bg-gray-800;
+}
+
+.dark .text-gray-800 {
+  @apply text-gray-200;
+}
+
+.custom-cursor {
+  cursor: url('./assets/cursor.svg'), auto;
+}
+
+/* setting the stroke in hero text "design based" */
+.gradient-stroke {
+  stroke: linear-gradient(to right, #ff0000, #ff6a00); 
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-shadow: 0 0 1px #facc15, 0 0 1px #f97316; 
+}
+
+/* Add dark mode styles for other elements */
+.herotextset h2 span.text-gray-700 {
+    @apply dark:text-gray-300;
+}
+
+.text-gray-600 {
+    @apply dark:text-gray-400;
+}
+
+.bg-white {
+    @apply dark:bg-gray-800;
+}
+
+.text-gray-800 {
+    @apply dark:text-gray-200;
+}
+
+/* 
+#2c3e50 -dark
+#f0ebe1 -light
+ */
+
+
+
+
+
+
+
+
+
