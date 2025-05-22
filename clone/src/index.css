@@ -82,6 +82,13 @@ body {
   color: black; /* optional - text color when selected */
 }
 
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: #38bdf8; /* yellow-400 */
+    color: #2c3e50; /* your dark bg as text color */
+  }
+}
+
 /* 
 #2c3e50 -dark
 #f0ebe1 -light
