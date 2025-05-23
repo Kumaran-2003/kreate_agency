@@ -50,7 +50,14 @@ function Land() {
 
 
         <div className="herotextset text-start flex flex-col gap-4">
-            <h2 className="text-5xl font-mono tracking-tighter leading-15 font-semibold">Kick-start your next product. <br /> <span className="text-gray-700"><span className='text-yellow-500 gradient-stroke'>Design based,</span> User Centric, and stress-free development</span></h2>
+            <h2 className="text-4xl sm:text-4xl md:text-5xl font-mono font-black sm:font-semibold tracking-tight sm:tracking-tighter leading-12 md:leading-[4rem]">
+            Kick-start your next product. <br />
+            <span className="text-gray-700">
+                <span className="text-yellow-500 gradient-stroke">Design based,</span> User Centric, and stress-free development
+            </span>
+            </h2>
+
+            {/* <h2 className="text-5xl font-mono tracking-tighter leading-15 font-semibold">Kick-start your next product. <br /> <span className="text-gray-700"><span className='text-yellow-500 gradient-stroke'>Design based,</span> User Centric, and stress-free development</span></h2> */}
             <p className="text-lg text-gray-600 font-normal leading-7 -tracking-tight">Turn your idea into the market-ready MVP in less than a month. With all you need to launch and run it.</p>
         </div>
 
@@ -123,34 +130,42 @@ function Land() {
 
 
     
-    <div className="footer text-center">
-        <div className="text-7xl font-bold sm:text-[210px] font-bold pt-16 bg-gradient-to-r from-[#999898] via-[#909091] to-[#9d9d9f] 
-             bg-clip-text text-transparent hover:from-yellow-300 hover:via-yellow-500 hover:to-[#f9b120] transition-all duration-500
-             md:text-[160px] lg:text-[200px]">
-             KREATE
+    <div className="footerset text-center">
+        <div className="text-8xl sm:text-[210px] md:text-[160px] lg:text-[200px] font-bold pt-16 
+        bg-gradient-to-b from-gray-600 via-gray-400 to-gray-500 
+        bg-clip-text text-transparent hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 
+        hover:bg-gradient-to-b 
+        transition-all duration-500">
+        KREATE
         </div>
 
-
-        
-        <div className='iconset flex justify-center px-30 py-16 opacity-50 sm:gap-8'>
-        <img width="48" height="48" className='cursor-pointer' src="https://img.icons8.com/material-two-tone/48/instagram-new.png" alt="instagram-new"/>
-        <img width="48" height="48" className='cursor-pointer' src="https://img.icons8.com/material-two-tone/48/linkedin--v1.png" alt="linkedin--v1"/>
-        <img width="48" height="48" className='cursor-pointer' src="https://img.icons8.com/material-two-tone/48/twitterx--v1.png" alt="twitterx--v1"/>
-        <img width="48" height="48" className='cursor-pointer' src="https://img.icons8.com/material-two-tone/48/facebook.png" alt="facebook"/>
-        <img width="48" height="48" className='cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} src="https://img.icons8.com/material-two-tone/48/chevron-up.png" alt="chevron-up"/>
-
+        <div className='iconset flex flex-wrap justify-center items-center gap-4 sm:gap-8 px-4 py-8 opacity-50'>
+            <a href="https://www.instagram.com/kumaran.design" target="_blank" rel="noopener noreferrer">
+                  <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' src="https://img.icons8.com/material-two-tone/48/instagram-new.png" alt="instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/gnanasambandamsr/" target="_blank" rel="noopener noreferrer">
+                  <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' src="https://img.icons8.com/material-two-tone/48/linkedin--v1.png" alt="linkedin" />
+            </a>
+            <a href="https://www.instagram.com/kumaru.4n" target="_blank" rel="noopener noreferrer">
+                  <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' src="https://img.icons8.com/material-two-tone/48/twitterx--v1.png" alt="twitterx" />
+            </a>
+            <a href="https://www.instagram.com/kumaru.4n" target="_blank" rel="noopener noreferrer">
+                    <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' src="https://img.icons8.com/material-two-tone/48/facebook.png" alt="facebook" />
+            </a>
+                    <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} src="https://img.icons8.com/material-two-tone/48/chevron-up.png" alt="scroll to top" />
         </div>
     
     
         
-        <div>
+        <div className='pt-14 pb-2'>
             <h3>Crafted with care❤️ by<a href='https://www.gnanasambandam.live'  className='font-semibold pb-4'> Kay </a></h3>
         </div>
 
     </div>
-        
     </div>
+
     </div>
+
     );
 }
 
