@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Calendar } from 'lucide-react'
+import TrueFocus from './TrueFocus';
 
 
 function Land() {
@@ -31,6 +32,8 @@ function Land() {
     
     <div className="heroset flex flex-col">
 
+
+
         <div className="logoset flex gap-4 py-24 items-center justify-between items-center">
             <div className="logo flex gap-1 items-center">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEi0lEQVR4nO1YW2hdVRDdtb5QfKLWYjkzN0aF4ocg6odgEf0T/BONFVRstVXrC0EUJBVfaEEUFPVDUETBSJKZk5AahAar9UMqlAarSNVKtVht0JDEM7Nju2Xf5zk75zZJ7y33BLpgkws597Jm9syaNceYE1jiEMJblfGAMrpFHcKfEird3FHyjq44SxgnFk2+cfZ2NABheNoTsccaAOHPHSPvRlecqQwHq0QWSR7Kf4XwkY4FIDE+WSZRI8M4o3G0Thl65hyK1grDvnQQQjDu3r36lI6Qd2NwujL+ns1qNJBLnqFHGD7IkscjNsY1plMQwkdTdeyzn1jG+/PIJwQbhHAmXWo+oI6RdyPdpynhb0FNc7PsK8P2oHQmp/ujlR0LwMbwYLXmK9knEBvjA03IbxbGI/M1rhuOztOhriuFoluUo/v8bVrC69pO3vWtPlUJfg1UZTiffHRX+KwPVglfFIL3leFzZdxTL698mR1xI91nty0AJVxf/uG4VvugCcPG3MYdzDbuYo/U+oXgw7aQd2PmZD946uVTCWRrc+XBv5sNOf99G1eOxjBPIDDrRrovbD37DPcEjWsTih6aL4AFZZtBq37qOyH8Sghs+v82Ll3TWvb7zHIl+DFzteUabqo8PcqlLULwh5dYPzMs47gyfOHnhXD0ng6VXhXGp5Si9dnv+Z7Kzoyp/q6LWss+RWszSsIwaxk3HT2AYzrv1Hus0cj9rWW/15zk1SJ75dG240B+s09MUKb7p4fh4tayP4i3pxtXGA9LDI+3k7xl3OQHXNDo/7Zc+x5CsCujPOU6bmPmCe6dOy/88Cvd1jJ5HYSrgqwcFoInaoNKGB5Twpd8U1qCISH4Rhn2VRoXDinjy0clH8OdlmFnzgzobZl8al1M//C0MOzW2KsL/LcA339wnhvgHN3/xDmzrE0BRKvTrnNhmt7YEbS8bjYjj2+FiiOMO1288gzTTijB6GKDSN3A9iZN+2x9WFH9+QMzQ6suMe2Giy+/QAi+bDLmJ4XwW3/tVZM2mbUP8EZIPuHSwxpMafGKM1C6tu3k60E4s8wS3lBZWvBuy9H1U1xakX4m4Uu7A3sw661xEIC3I7+kg5Sy4kCP6TSE/GxIEWMYDxVHGb/OKbPnTRGgjNsyN1C20+ns+525YUeqZ8BP+k5zN66v6xzhwEH6GVGve3i9sZnV+2eXfzVjigAluCMojf018sLwjDJIWjKF4K9kOOoyRYEwfpS35NvKtjYRen8vCKYocH1muTAeChb3Xq9WyrB3Tt0PltaZIsHGuCbQ9KmKT8IdcxSH4BVTNCjBlqB8vFv9tFLz0LAKhFv9bZmiQRl+yOo/7qgrTsMm7PFKZYoGGeq6LMfMhXL5Z8JRyRQRUt4N8h1pVXFsQnCjKSqUcSxNuH6qde+9kykqXM70rUpo7fNrpsjQylKSVp+0XI76N3mmyBDCj3MDIPzeDcK5pshwOdO32gsTXplM0WFT0zf1qtEmcXSTWQpQxhfC5rUEG8xSgTI8FwTwpllKcH2rzleGz4ThH2F8u/CKcwLm+OF/awoNfd1iZLIAAAAASUVORK5CYII=" alt="harry-potter-"/>
@@ -53,11 +56,18 @@ function Land() {
             <h2 className="text-4xl sm:text-4xl md:text-5xl font-mono font-black sm:font-semibold tracking-tight sm:tracking-tighter leading-12 md:leading-[4rem]">
             Kick-start your next product. <br />
             <span className="text-gray-700">
-                <span className="text-yellow-500 gradient-stroke">Design based,</span> User Centric, and stress-free development
+                <span className="text-yellow-500 gradient-stroke"><TrueFocus 
+                sentence="Design Focused,"
+                manualMode={false}
+                blurAmount={5}
+                borderColor="white"
+                animationDuration={2}
+                pauseBetweenAnimations={1}
+                /> </span> 
+            User Centric, and stress-free development
             </span>
             </h2>
 
-            {/* <h2 className="text-5xl font-mono tracking-tighter leading-15 font-semibold">Kick-start your next product. <br /> <span className="text-gray-700"><span className='text-yellow-500 gradient-stroke'>Design based,</span> User Centric, and stress-free development</span></h2> */}
             <p className="text-lg text-gray-600 font-normal leading-7 -tracking-tight">Turn your idea into the market-ready MVP in less than a month. With all you need to launch and run it.</p>
         </div>
 
@@ -131,13 +141,16 @@ function Land() {
 
     
     <div className="footerset text-center">
+
+
         <div className="text-8xl sm:text-[210px] md:text-[160px] lg:text-[200px] font-bold pt-16 
-        bg-gradient-to-b from-gray-600 via-gray-400 to-gray-500 
-        bg-clip-text text-transparent hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 
-        hover:bg-gradient-to-b 
-        transition-all duration-500">
-        KREATE
+            bg-gradient-to-b from-gray-600 via-gray-400 to-gray-500 
+            bg-clip-text text-transparent hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 
+            hover:bg-gradient-to-b 
+            transition-all duration-500">
+            KREATE
         </div>
+
 
         <div className='iconset flex flex-wrap justify-center items-center gap-4 sm:gap-8 px-4 py-8 opacity-50'>
             <a href="https://www.instagram.com/kumaran.design" target="_blank" rel="noopener noreferrer">
@@ -152,13 +165,13 @@ function Land() {
             <a href="https://www.instagram.com/kumaru.4n" target="_blank" rel="noopener noreferrer">
                     <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' src="https://img.icons8.com/material-two-tone/48/facebook.png" alt="facebook" />
             </a>
-                    <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} src="https://img.icons8.com/material-two-tone/48/chevron-up.png" alt="scroll to top" />
+                    <img className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' alt="scroll to top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} src="https://img.icons8.com/material-two-tone/48/chevron-up.png" />
         </div>
     
     
         
         <div className='pt-14 pb-2'>
-            <h3>Site’s over. But the grind isn’t ⚡powered by<a href='https://www.gnanasambandam.live'  className='font-semibold pb-4'> Kay </a></h3>
+            <h3>Site’s over. But the grind isn’t ⚡powered by<a href='https://www.gnanasambandam.live'  className='font-semibold pb-4 text-yellow-500'> Kay 🤺</a></h3>
         </div>
 
     </div>
