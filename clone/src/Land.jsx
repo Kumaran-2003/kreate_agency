@@ -65,14 +65,14 @@ function Land() {
 
         <div className="buttonset flex gap-4 py-4">
             <button
-            className="button font-medium px-4 py-2 bg-gray-600 text-white rounded-lg cursor-pointer"
+            className="button font-medium px-4 py-2 bg-gray-600 text-white rounded-xl cursor-pointer"
             onClick={() => {
                 document.getElementById('pricingcard')?.scrollIntoView({ behavior: 'smooth' });
             }}>   
             See pricing
             </button>
 
-            <button className="buttonsecondary font-medium flex gap-2 px-4 py-2 bg-white text-gray-800 rounded-lg cursor-pointer"><Calendar />Book a call
+            <button className="buttonsecondary font-medium flex gap-2 px-4 py-2 bg-white text-gray-800 rounded-xl cursor-pointer"><Calendar />Book a call
             </button>
         </div>
     </div>
@@ -92,9 +92,9 @@ function Land() {
 
 
 
-    <div id="pricingcard" className='pricingcard bg-yellow-300 rounded-2xl p-8 pb-2'>
-        <h2 className='text-3xl text-left font-semibold font-mono'>Fixed price with no hidden costs</h2>
-        <h2 className='text-2xl text-left font-semibold py-6'>$3,999/MVP</h2>
+    <div id="pricingcard" className='pricingcard bg-yellow-300 rounded-3xl p-8 pb-2'>
+        <h2 className='text-3xl text-left font-semibold font-mono pb-3'>Fixed price with no hidden costs</h2>
+        <h2 className='text-4xl text-left font-semibold bg-[#fbd26a] w-full h-fit rounded-lg py-2 px-2 my-auto'>$3,999/MVP<span className='text-gray-700 font-normal text-xl -tracking-tight'>/unlimited revisions</span></h2>
 
         <div className='text-left text-xl text-gray-600 py-4 flex flex-col gap-4 leading-7 -tracking-tight'>
             <ul className='list-inside list-disc'>
@@ -108,8 +108,8 @@ function Land() {
         </div>
 
         <div className="buttonset flex flex-col gap-4 py-4 sm:flex-row">
-            <button className="bg-gray-600 font-medium px-4 py-2 rounded-lg text-white w-full justify-center min-w-[160px] cursor-pointer">Get started</button>
-            <button className="buttonsecondary bg-white font-medium text-gray-800 px-4 py-2 rounded-lg flex gap-4 w-full justify-center min-w-[160px] cursor-pointer"><Calendar />Book a call</button>
+            <button className="bg-gray-600 font-medium px-4 py-2 rounded-xl text-white w-full justify-center min-w-[160px] cursor-pointer">Get started</button>
+            <button className="buttonsecondary bg-white font-medium text-gray-800 px-4 py-2 rounded-xl flex gap-4 w-full justify-center min-w-[160px] cursor-pointer"><Calendar />Book a call</button>
         </div>
 
     </div>
@@ -118,13 +118,13 @@ function Land() {
 
     
     <div className="aboutfounder py-24">
-        <h2 className='text-3xl text-left font-semibold font-mono'>About the founder</h2>
+        <h2 className='text-3xl text-left font-semibold font-mono'>Behind the Scenes. And the Screens.</h2>
         <div className="foundertextset text-left text-lg leading-7 -tracking-tight text-gray-600 py-4 flex flex-col gap-4">
-            <p>Hi, I’m <span className='font-semibold'>Julián Evian</span>, a software engineer from nowhere with 10+ years of experience in product development.</p>
+            <p><span className='font-semibold'>Julián Evian</span> here, software engineer by trade, 10+ years deep in product hustle from nowhere you’ve heard of.</p>
             <p>I’ve built and launched products for startups and big companies. I know how to build a product that users love.</p>
-            <p>Seeing others having great ideas and no chance to bring them to life, motivated me to start Refined. Our goal is to help you kick-start your product. You have an idea, we have coding skills.</p>
+            <p>Seeing others having great ideas and no chance to bring them to life, motivated me to start Refined. Our goal is to help you kick-start your product. You have an idea? we've got you covered.</p>
             <p>Refined saves you from both. We build lean products with just the right features for smooth performance and user love.</p>
-            <p>Let’s work together to make your idea a reality.</p>
+            <p>Let’s bring your idea to life — together.</p>
         </div>
     </div>
 
@@ -158,7 +158,7 @@ function Land() {
     
         
         <div className='pt-14 pb-2'>
-            <h3>Crafted with care❤️ by<a href='https://www.gnanasambandam.live'  className='font-semibold pb-4'> Kay </a></h3>
+            <h3>Site’s over. But the grind isn’t ⚡powered by<a href='https://www.gnanasambandam.live'  className='font-semibold pb-4'> Kay </a></h3>
         </div>
 
     </div>
