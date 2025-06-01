@@ -26,7 +26,6 @@ body {
   @apply bg-white;
 }
 
-
 .dark .text-gray-800 {
   @apply text-gray-200;
 }
@@ -51,12 +50,24 @@ body {
   cursor: url('./assets/cursor.svg'), auto;
 }
 
-/* setting the stroke in hero text "design based" */
+/* Update the gradient stroke for light mode (blue) and dark mode (yellow) */
 .gradient-stroke {
-  stroke: linear-gradient(to right, #ff0000, #ff6a00); 
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  text-shadow: 0 0 1px #facc15, 0 0 1px #f97316; 
+  /* Light mode - blue gradient */
+  background: linear-gradient(to right, #FF9900, #FF9900);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 1px #FF9900, 0 0 1px #FF9900;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode - yellow gradient */
+.dark .gradient-stroke {
+  background: linear-gradient(to right, #facc15, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 1px #facc15, 0 0 1px #f97316;
 }
 
 /* Add dark mode styles for other elements */

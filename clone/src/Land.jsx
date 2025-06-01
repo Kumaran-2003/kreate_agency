@@ -56,11 +56,12 @@ function Land() {
             <h2 className="text-4xl sm:text-4xl md:text-5xl font-mono font-black sm:font-semibold tracking-tight sm:tracking-tighter leading-12 md:leading-[4rem]">
             Kick-start your next product. <br />
             <span className="text-gray-700">
-                <span className="text-yellow-500 gradient-stroke"><TrueFocus 
+                <span className="text-yellow-500 gradient-stroke">
+                <TrueFocus 
                 sentence="Design Focused,"
                 manualMode={false}
                 blurAmount={5}
-                borderColor="white"
+                borderColor={darkMode ? "#ffffff" : "#ff6b35"}
                 animationDuration={2}
                 pauseBetweenAnimations={1}
                 /> </span> 
